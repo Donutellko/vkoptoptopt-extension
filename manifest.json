@@ -1,0 +1,21 @@
+{
+    "name": "VkOptOptOpt",
+    "version": "1.0",
+    "manifest_version": 2,
+	"icons": {
+		"128": "img/vkpeka128.png"
+	},
+
+	"browser_action": {
+		"default_title": "Make my life a bit easier. Please."
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://vk.com/*"],
+			"js": ["vk/music_mine.js"],
+			"run_at": "document_end",
+			"all_frames": false
+		}
+	],
+	"permissions": []
+ }
